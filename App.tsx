@@ -1,5 +1,4 @@
 import { StyleSheet, View } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -8,20 +7,11 @@ import 'react-native-gesture-handler';
 function PickerScreen() {
   return (
     <View style={styles.container}>
-      <Picker>
-        <Picker.Item
-          label={'One'}
-          value={1}
-        /> 
-        <Picker.Item
-          label={'Two'}
-          value={2}
-        />   
-        <Picker.Item
-          label={'Three'}
-          value={3}
-        />
-      </Picker>
+      <select>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
     </View>
   );
 }
